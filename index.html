@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <title>Etch a Sketch</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Etch a Sketch</h1>
+    <main>
+      <div class="main-container">
+        <div class="settings">
+          <input id="color-picker" type="color" />
+          <button id="color-mode">Color mode</button>
+          <button id="rainbow-mode">Rainbow mode</button>
+          <button id="eraser">Eraser</button>
+          <button id="clear">Reset</button>
+          <div class="slider">
+            <input type="range" min="8" max="64" value="100" oninput="rangeValue.innerText = this.value" />
+            <p id="rangeValue">64</p>
+          </div>
+        </div>
+        <div class="grid-container"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Osius Kara
+        </p>
+        <a href="https://github.com/OsiusKara" target="_blank"> <i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
