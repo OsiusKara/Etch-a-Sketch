@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <title>Etch a Sketch</title>
+    <title>Etchy</title>
   </head>
   <body>
     <h1>Etch a Sketch</h1>
@@ -22,11 +22,11 @@
           <button id="eraser">Eraser</button>
           <button id="clear">Reset</button>
           <div class="slider">
-            <input type="range" min="8" max="64" value="100" oninput="rangeValue.innerText = this.value" />
-            <p id="rangeValue">64</p>
+            <input type="range" min="8" max="64" value="100" id="range" oninput="rangeValue.innerText = this.value" />
+            <p id="rangeValue">32</p>
           </div>
         </div>
-        <div class="grid-container"></div>
+        <div id="grid-container" class="container"></div>
       </div>
     </main>
     <footer>
